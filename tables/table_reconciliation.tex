@@ -1,0 +1,32 @@
+% Requires: booktabs, multirow, graphicx, amsmath, bm and the macros
+% \newcommand{\AuxN}{Aux-$\psi$} \newcommand{\AuxP}{Aux-$\psi a^{+}$}
+% \newcommand{\AuxI}{Aux-$\psi a^{\pm}$} \newcommand{\lmin}{\lambda_{\min}}
+% \newcommand{\Lap}{\bm{L}} \newcommand{\D}{\bm{D}} \newcommand{\Supp}[1]{Supplementary~#1}
+\begin{table}[h]
+\centering
+\caption{Reconciliation of matched-protocol reimplementations with published test accuracy (\%). Protocol codes: P = Planetoid public split, as in our Cora runs; F = the ten filtered splits of Platonov et al., as in our Chameleon-f and Squirrel-f runs; R = sparse random 2.5/2.5/95 splits; G = the ten Geom-GCN splits. Only rows marked P or F share our protocol. n.r.: not reported for this dataset and protocol.}
+\label{tab:recon}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llccll}
+\toprule
+Method & Dataset & Ours & Published & Protocol & Source \\
+\midrule
+GPR-GNN & Chameleon-f & 37.28 & 39.93$\pm$3.30 & F & \cite{platonov2023critical}, Table 2 \\
+GPR-GNN & Squirrel-f & 36.75 & 38.95$\pm$1.99 & F & \cite{platonov2023critical}, Table 2 \\
+FAGCN & Chameleon-f & 38.50 & 41.90$\pm$2.72 & F & \cite{platonov2023critical}, Table 2 \\
+FAGCN & Squirrel-f & 39.26 & 41.08$\pm$2.27 & F & \cite{platonov2023critical}, Table 2 \\
+FAGCN & Cora & 80.32 & 84.1$\pm$0.5 & P & \cite{bo2021beyond}, Table 2 \\
+GRAND (GRAND-l) & Cora & 78.79 & 84.7$\pm$0.6 & P & \cite{chamberlain2021grand}, Table 1 \\
+Induced metric (BLEND) & Cora & 73.42 & 84.2$\pm$0.6 & P & \cite{chamberlain2021beltrami}, Table 2 \\
+\midrule
+GPR-GNN & Cora & 81.87 & 79.51$\pm$0.36$^{a}$ & R & \cite{chien2021adaptive}, Table 2 \\
+GRAFF & Cora & 78.82 & 88.01$\pm$1.03 & G & \cite{digiovanni2023understanding}, App.\ Table 3 \\
+GRAND & Chameleon-f & 39.27 & n.r. & -- & -- \\
+GRAFF & Chameleon-f & 39.28 & n.r. & -- & -- \\
+Induced metric (BLEND) & Chameleon-f & 39.68 & n.r. & -- & -- \\
+\bottomrule
+\multicolumn{6}{l}{$^{a}$95\% confidence interval over 100 runs, not a standard deviation.}
+\end{tabular}}
+\end{table}

@@ -1,0 +1,26 @@
+{
+  "none": {
+    "is_gauge": true,
+    "representative_err": 4.0,
+    "volume_over_N": 1.0,
+    "changes_D": 0.0
+  },
+  "weyl": {
+    "is_gauge": true,
+    "representative_err": 1.920536973898379e-08,
+    "volume_over_N": 1.0,
+    "changes_D": 0.0
+  },
+  "trace_log": {
+    "is_gauge": true,
+    "representative_err": 7.299852455844302e-08,
+    "volume_over_N": 2.1047403812408447,
+    "changes_D": 4.214684778958144e-08
+  },
+  "weyl_row": {
+    "is_gauge": false,
+    "representative_err": 1.920536973898379e-08,
+    "volume_over_N": 1.0,
+    "changes_D": 1.2929458618164062
+  }
+}

@@ -1,0 +1,49 @@
+% Requires: booktabs, multirow, graphicx, amsmath, bm and the macros
+% \newcommand{\AuxN}{Aux-$\psi$} \newcommand{\AuxP}{Aux-$\psi a^{+}$}
+% \newcommand{\AuxI}{Aux-$\psi a^{\pm}$} \newcommand{\lmin}{\lambda_{\min}}
+% \newcommand{\Lap}{\bm{L}} \newcommand{\D}{\bm{D}} \newcommand{\Supp}[1]{Supplementary~#1}
+\begin{table}[h]
+\centering
+\caption{E5: paired comparisons on the five heterophilic graphs (50 split-level pairs). Difference in points (model minus reference), 95\% bootstrap interval, effect size $d$, effective pairs $n_{\mathrm{eff}}$ after ties, and Holm-adjusted two-sided Wilcoxon $p$.}
+\label{tab:pairs}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llccccc}
+\toprule
+Reference & Model & Diff. & 95\% CI & $d$ & $n_{\mathrm{eff}}$ & $p_{\mathrm{Holm}}$ \\
+\midrule
+\multirow{9}{*}{Induced metric}
+ & FAGCN & $+0.97$ & [$-0.27$, $2.21$] & 0.21 & 50 & 0.617 \\
+ & GCN & $-7.00$ & [$-10.28$, $-4.13$] & $-0.63$ & 48 & 0.002 \\
+ & GPR-GNN & $+0.08$ & [$-1.24$, $1.38$] & 0.02 & 47 & 0.719 \\
+ & GRAFF & $+3.09$ & [$1.89$, $4.32$] & 0.70 & 48 & $<10^{-3}$ \\
+ & GRAND & $-7.45$ & [$-10.59$, $-4.70$] & $-0.71$ & 49 & $<10^{-4}$ \\
+ & \AuxP & $-1.12$ & [$-1.80$, $-0.46$] & $-0.45$ & 46 & 0.021 \\
+ & \AuxN & $-0.85$ & [$-1.53$, $-0.19$] & $-0.35$ & 50 & 0.005 \\
+ & \AuxI & $-0.56$ & [$-1.13$, $0.02$] & $-0.25$ & 48 & 0.180 \\
+ & MLP & $-8.96$ & [$-12.29$, $-5.85$] & $-0.76$ & 50 & $<10^{-4}$ \\
+\midrule
+\multirow{9}{*}{GPR-GNN}
+ & Induced metric & $-0.08$ & [$-1.38$, $1.24$] & $-0.02$ & 47 & 1.000 \\
+ & FAGCN & $+0.89$ & [$0.33$, $1.49$] & 0.41 & 49 & 0.021 \\
+ & GCN & $-7.08$ & [$-10.12$, $-4.26$] & $-0.67$ & 48 & 0.010 \\
+ & GRAFF & $+3.01$ & [$1.82$, $4.25$] & 0.69 & 48 & $<10^{-3}$ \\
+ & GRAND & $-7.53$ & [$-10.19$, $-5.06$] & $-0.83$ & 49 & $<10^{-4}$ \\
+ & \AuxP & $-1.20$ & [$-2.73$, $0.24$] & $-0.22$ & 49 & 1.000 \\
+ & \AuxN & $-0.93$ & [$-2.25$, $0.28$] & $-0.21$ & 48 & 1.000 \\
+ & \AuxI & $-0.64$ & [$-1.77$, $0.47$] & $-0.15$ & 47 & 1.000 \\
+ & MLP & $-9.03$ & [$-13.25$, $-4.94$] & $-0.59$ & 49 & $<10^{-3}$ \\
+\midrule
+\multirow{9}{*}{MLP}
+ & Induced metric & $+8.96$ & [$5.85$, $12.29$] & 0.76 & 50 & $<10^{-4}$ \\
+ & FAGCN & $+9.92$ & [$5.94$, $14.10$] & 0.67 & 50 & $<10^{-4}$ \\
+ & GCN & $+1.95$ & [$-1.69$, $5.45$] & 0.15 & 49 & 0.307 \\
+ & GPR-GNN & $+9.03$ & [$4.94$, $13.25$] & 0.59 & 49 & $<10^{-4}$ \\
+ & GRAFF & $+12.04$ & [$7.97$, $16.44$] & 0.77 & 48 & $<10^{-4}$ \\
+ & GRAND & $+1.51$ & [$-2.55$, $5.65$] & 0.11 & 50 & 0.813 \\
+ & \AuxP & $+7.83$ & [$5.00$, $10.82$] & 0.72 & 49 & $<10^{-4}$ \\
+ & \AuxN & $+8.10$ & [$4.94$, $11.45$] & 0.68 & 49 & $<10^{-4}$ \\
+ & \AuxI & $+8.40$ & [$5.24$, $11.78$] & 0.70 & 49 & $<10^{-4}$ \\
+\bottomrule
+\end{tabular}
+\end{table}

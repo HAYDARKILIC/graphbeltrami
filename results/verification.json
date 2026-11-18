@@ -1,0 +1,13 @@
+{
+  "T1_gradient_flow": 3.552713678800501e-15,
+  "T2_weyl_invariance": 4.440892098500626e-16,
+  "T3_permutation": 0.0,
+  "T4_closed_form": 1.591520434558989e-15,
+  "T4b_gershgorin_path": 1.8808877862969872e-15,
+  "T5_lambda_max_rel": 2.314502914866971e-16,
+  "T5_lambda_min_abs": 8.298097723271702e-06,
+  "T6_backward_dz": 1.7763568394002505e-15,
+  "T6_backward_dD": 1.7763568394002505e-15,
+  "T7_shift_positive": 0.0,
+  "T7_shift_covers": 5.7095287653710765
+}

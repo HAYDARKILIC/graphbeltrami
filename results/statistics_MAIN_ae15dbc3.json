@@ -1,0 +1,42 @@
+{
+  "heterophilic": {
+    "mean_ranks": {
+      "blend_induced": 4.2,
+      "fagcn": 4.6,
+      "gcn": 6.0,
+      "gprgnn": 5.8,
+      "graff": 3.6,
+      "grand": 8.6,
+      "learned_edge_gauge": 4.8,
+      "learned_node_gauge": 6.0,
+      "lorentzian": 4.4,
+      "mlp": 7.0
+    },
+    "F": 1.3020565552699221,
+    "p": 0.2699250506341552,
+    "N": 5,
+    "k": 10,
+    "cd": 6.058598737882108,
+    "q_extrapolated": false
+  },
+  "all": {
+    "mean_ranks": {
+      "blend_induced": 4.5,
+      "fagcn": 4.333333333333333,
+      "gcn": 5.333333333333333,
+      "gprgnn": 5.0,
+      "graff": 3.6666666666666665,
+      "grand": 8.0,
+      "learned_edge_gauge": 5.333333333333333,
+      "learned_node_gauge": 6.166666666666667,
+      "lorentzian": 5.166666666666667,
+      "mlp": 7.5
+    },
+    "F": 1.2817258883248768,
+    "p": 0.2731313093545411,
+    "N": 6,
+    "k": 10,
+    "cd": 5.530718659350599,
+    "q_extrapolated": false
+  }
+}

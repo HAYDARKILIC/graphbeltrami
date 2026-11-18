@@ -1,0 +1,209 @@
+{
+  "pass": "B",
+  "prefix": "MAIN_cb77b145",
+  "max_euler_steps": 128,
+  "code_version": "tsipn-v4-corrected-cfl-det-kmax128",
+  "step_rule": "tau <= 0.9 * min(1/r, 1/beta)",
+  "deterministic": "strict",
+  "determinism_note": null,
+  "preflight_identical": true,
+  "rerun_exact": false,
+  "n_rows": 96,
+  "worst_amplification": 0.9582442454459249,
+  "n_unstable": 0,
+  "device": "NVIDIA A100-SXM4-40GB",
+  "by_variant_T32_on": {
+    "learned_node_gauge": {
+      "beta": 0.5098332688212395,
+      "tau": 0.8888888888888888,
+      "n_matvec": 36.0,
+      "delivered_T": 32.00000000000001,
+      "seconds": 12.424999999999999,
+      "capped": 0
+    },
+    "lorentzian": {
+      "beta": 2.3987385630607605,
+      "tau": 0.3751029370468486,
+      "n_matvec": 85.5,
+      "delivered_T": 32.00000000000002,
+      "seconds": 31.585,
+      "capped": 0
+    }
+  },
+  "table": {
+    "delivered_T": {
+      "off|euler": [
+        0.8808,
+        1.3427,
+        2.3463,
+        3.456,
+        3.2636,
+        3.1747
+      ],
+      "off|exact": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "on|euler": [
+        1.0,
+        2.0,
+        4.0,
+        8.0,
+        16.0,
+        32.0
+      ],
+      "on|exact": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "n_matvec": {
+      "off|euler": [
+        71.375,
+        86.75,
+        105.5,
+        125.125,
+        128.0,
+        128.0
+      ],
+      "off|exact": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "on|euler": [
+        2.5,
+        4.375,
+        7.875,
+        15.0,
+        30.125,
+        60.75
+      ],
+      "on|exact": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "seconds": {
+      "off|euler": [
+        17.745,
+        22.3238,
+        29.2,
+        36.2962,
+        38.7825,
+        40.1287
+      ],
+      "off|exact": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "on|euler": [
+        2.3575,
+        2.9763,
+        4.0875,
+        6.6438,
+        11.645,
+        22.005
+      ],
+      "on|exact": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "euler_tau": {
+      "off|euler": [
+        0.0243,
+        0.0252,
+        0.0288,
+        0.0287,
+        0.0255,
+        0.0248
+      ],
+      "off|exact": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "on|euler": [
+        0.4167,
+        0.5083,
+        0.5871,
+        0.6355,
+        0.6345,
+        0.632
+      ],
+      "on|exact": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "test_primary": {
+      "off|euler": [
+        0.4106,
+        0.4129,
+        0.4093,
+        0.4096,
+        0.4096,
+        0.4096
+      ],
+      "off|exact": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "on|euler": [
+        0.403,
+        0.4057,
+        0.4014,
+        0.4033,
+        0.4026,
+        0.4026
+      ],
+      "on|exact": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  "primary_metric_config_range": [
+    0.40138401836156845,
+    0.41285918653011316
+  ]
+}

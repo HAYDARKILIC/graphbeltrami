@@ -1,0 +1,29 @@
+% Requires: booktabs, multirow, graphicx, amsmath, bm and the macros
+% \newcommand{\AuxN}{Aux-$\psi$} \newcommand{\AuxP}{Aux-$\psi a^{+}$}
+% \newcommand{\AuxI}{Aux-$\psi a^{\pm}$} \newcommand{\lmin}{\lambda_{\min}}
+% \newcommand{\Lap}{\bm{L}} \newcommand{\D}{\bm{D}} \newcommand{\Supp}[1]{Supplementary~#1}
+\begin{table}[t]
+\centering
+\caption{Node classification (E5). Accuracy, except Minesweeper (AUROC); mean $\pm$ standard deviation over ten splits (seed variance on Cora). Best in bold. $^\dagger$Reimplemented from the published equations (\Supp{Table S15}).}
+\label{tab:cls}
+\footnotesize
+\setlength{\tabcolsep}{2.6pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccc}
+\toprule
+Method & Cora & Chameleon-f & Squirrel-f & Roman-empire & Amazon-ratings & Minesweeper \\
+\midrule
+MLP & 58.24$\pm$1.57 & 39.74$\pm$3.91 & 37.39$\pm$2.32 & 66.27$\pm$0.58 & 41.90$\pm$0.55 & 50.54$\pm$1.24 \\
+GCN & 81.55$\pm$0.48 & \textbf{40.69$\pm$4.53} & 36.70$\pm$2.45 & 49.58$\pm$0.27 & 46.27$\pm$0.47 & 72.35$\pm$0.94 \\
+FAGCN$^\dagger$ & 80.32$\pm$1.25 & 38.50$\pm$3.29 & \textbf{39.26$\pm$2.13} & 73.19$\pm$0.56 & 45.56$\pm$0.52 & 88.93$\pm$0.95 \\
+GPR-GNN$^\dagger$ & \textbf{81.87$\pm$0.64} & 37.28$\pm$2.49 & 36.75$\pm$1.30 & 71.75$\pm$0.57 & 46.29$\pm$0.72 & 88.93$\pm$0.69 \\
+GRAND$^\dagger$ & 78.79$\pm$0.77 & 39.27$\pm$3.48 & 34.12$\pm$1.61 & 49.10$\pm$0.59 & 44.22$\pm$0.53 & 76.66$\pm$1.16 \\
+GRAFF$^\dagger$ & 78.82$\pm$1.19 & 39.28$\pm$3.08 & 36.12$\pm$2.09 & \textbf{82.38$\pm$0.47} & \textbf{47.39$\pm$0.47} & \textbf{90.86$\pm$1.26} \\
+Induced metric$^\dagger$ & 73.42$\pm$1.26 & 39.68$\pm$3.92 & 36.57$\pm$2.49 & 76.73$\pm$0.55 & 46.53$\pm$0.65 & 81.09$\pm$0.77 \\
+\midrule
+\AuxN{} (ours) & 65.18$\pm$1.93 & 39.05$\pm$4.33 & 36.79$\pm$1.85 & 74.76$\pm$0.58 & 44.88$\pm$0.43 & 80.87$\pm$0.96 \\
+\AuxP{} (ours) & 61.51$\pm$1.63 & 39.90$\pm$3.40 & 37.74$\pm$1.98 & 74.76$\pm$1.03 & 43.99$\pm$0.53 & 78.60$\pm$2.78 \\
+\AuxI{} (ours) & 59.31$\pm$1.16 & 39.36$\pm$4.71 & 38.05$\pm$2.10 & 73.76$\pm$0.62 & 44.92$\pm$0.65 & 81.73$\pm$0.80 \\
+\bottomrule
+\end{tabular}}
+\end{table}

@@ -1,0 +1,26 @@
+% Requires: booktabs, multirow, graphicx, amsmath, bm and the macros
+% \newcommand{\AuxN}{Aux-$\psi$} \newcommand{\AuxP}{Aux-$\psi a^{+}$}
+% \newcommand{\AuxI}{Aux-$\psi a^{\pm}$} \newcommand{\lmin}{\lambda_{\min}}
+% \newcommand{\Lap}{\bm{L}} \newcommand{\D}{\bm{D}} \newcommand{\Supp}[1]{Supplementary~#1}
+\begin{table}[t]
+\centering
+\caption{Stability (E4), mean over $T\in\{1,4,16\}$, one split. Margin: $\beta-|\lmin(\Lap)|$; the flow is bounded if and only if it is positive. $m$: Gershgorin shift of Eq.~\eqref{eq:shift}. n/a: ill-posed unshifted flow with undefined diagnostics.}
+\label{tab:stab}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llccccc}
+\toprule
+ & & \multicolumn{2}{c}{Margin} & & \multicolumn{2}{c}{Accuracy (\%)} \\
+\cmidrule(lr){3-4}\cmidrule(lr){6-7}
+Dataset & Metric & free & shift & $m$ & free & shift \\
+\midrule
+\multirow{3}{*}{Chameleon-f} & \AuxN & $+0.54$ & $+0.54$ & 0.00 & 43.81 & 43.81 \\
+ & \AuxP & $+0.51$ & $+0.50$ & 0.00 & 46.22 & 46.22 \\
+ & \AuxI & n/a & $+1.36$ & 1.79 & 42.78 & 45.19 \\
+\midrule
+\multirow{3}{*}{Squirrel-f} & \AuxN & $+0.47$ & $+0.47$ & 0.00 & 35.99 & 35.99 \\
+ & \AuxP & $+0.93$ & $+0.93$ & 0.00 & 38.27 & 38.27 \\
+ & \AuxI & n/a & $+1.55$ & 1.78 & 37.83 & 38.57 \\
+\bottomrule
+\end{tabular}
+\end{table}

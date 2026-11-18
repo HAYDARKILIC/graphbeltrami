@@ -1,0 +1,9 @@
+# Keep the artefact byte-identical across platforms. Git on Windows converts
+# line endings on checkout by default; for result files that silently changes
+# the bytes a reviewer verifies, so they are marked as not-text.
+* text=auto eol=lf
+*.csv  -text
+*.json -text
+*.ipynb -text
+*.pdf  binary
+*.png  binary

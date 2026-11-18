@@ -1,0 +1,27 @@
+% Requires: booktabs, multirow, graphicx, amsmath, bm and the macros
+% \newcommand{\AuxN}{Aux-$\psi$} \newcommand{\AuxP}{Aux-$\psi a^{+}$}
+% \newcommand{\AuxI}{Aux-$\psi a^{\pm}$} \newcommand{\lmin}{\lambda_{\min}}
+% \newcommand{\Lap}{\bm{L}} \newcommand{\D}{\bm{D}} \newcommand{\Supp}[1]{Supplementary~#1}
+\begin{table}[h]
+\centering
+\caption{E1: relative error of the Chebyshev evaluation against the dense closed form, maximum over the two variants (CG with 200 iterations).}
+\label{tab:e1cheb}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lccccccccc}
+\toprule
+ & \multicolumn{3}{c}{Chameleon-f} & \multicolumn{3}{c}{Cora} & \multicolumn{3}{c}{Squirrel-f} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}
+Order & $T{=}1$ & $T{=}4$ & $T{=}16$ & $T{=}1$ & $T{=}4$ & $T{=}16$ & $T{=}1$ & $T{=}4$ & $T{=}16$ \\
+\midrule
+4  & 9.3e-06 & 4.5e-05 & 1.0e-09 & 1.1e-05 & 5.8e-05 & 1.4e-09 & 2.3e-05 & 9.2e-05 & 1.1e-09 \\
+8  & 2.3e-10 & 2.4e-07 & 2.7e-10 & 2.0e-10 & 1.9e-07 & 2.6e-10 & 5.9e-10 & 5.6e-07 & 4.8e-10 \\
+16 & 4.4e-16 & 4.1e-14 & 8.1e-13 & 4.2e-16 & 6.5e-14 & 9.1e-13 & 3.8e-16 & 4.6e-14 & 7.8e-13 \\
+24 & 5.9e-16 & 7.0e-16 & 7.0e-16 & 4.2e-16 & 5.3e-16 & 5.3e-16 & 5.8e-16 & 6.1e-16 & 6.6e-16 \\
+32 & 4.4e-16 & 7.0e-16 & 7.0e-16 & 4.2e-16 & 5.3e-16 & 5.3e-16 & 5.8e-16 & 6.1e-16 & 6.1e-16 \\
+48 & 4.9e-16 & 7.0e-16 & 7.0e-16 & 5.3e-16 & 5.3e-16 & 5.3e-16 & 3.8e-16 & 6.1e-16 & 6.1e-16 \\
+64 & 5.4e-16 & 7.0e-16 & 7.0e-16 & 4.2e-16 & 5.3e-16 & 5.3e-16 & 5.8e-16 & 6.1e-16 & 6.1e-16 \\
+96 & 8.1e-16 & 7.0e-16 & 7.0e-16 & 6.4e-16 & 5.3e-16 & 5.3e-16 & 3.8e-16 & 6.1e-16 & 6.1e-16 \\
+\bottomrule
+\end{tabular}
+\end{table}

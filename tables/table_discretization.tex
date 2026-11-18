@@ -1,0 +1,27 @@
+% Requires: booktabs, multirow, graphicx, amsmath, bm and the macros
+% \newcommand{\AuxN}{Aux-$\psi$} \newcommand{\AuxP}{Aux-$\psi a^{+}$}
+% \newcommand{\AuxI}{Aux-$\psi a^{\pm}$} \newcommand{\lmin}{\lambda_{\min}}
+% \newcommand{\Lap}{\bm{L}} \newcommand{\D}{\bm{D}} \newcommand{\Supp}[1]{Supplementary~#1}
+\begin{table}[t]
+\centering
+\caption{Cost of discretisation (E3, $K_{\max}=64$). Cells: delivered horizon / matrix-vector products per forward pass, mean over Chameleon-f and Squirrel-f and two splits. Euler uses the step $\tau=0.9\min(1/\rho_G,1/\beta)$. Bold: delivered horizon below the requested one.}
+\label{tab:disc}
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lllcccccc}
+\toprule
+Operator & Metric & Propagator & $T=1$ & $T=2$ & $T=4$ & $T=8$ & $T=16$ & $T=32$ \\
+\midrule
+\multirow{4}{*}{un-normalised} & \multirow{2}{*}{\AuxN} & exact & 1/72 & 2/96 & 4/104 & 8/104 & 16/72 & 32/72 \\
+ & & Euler & 1/24.5 & 2/45.5 & \textbf{2.90}/64 & \textbf{3.12}/64 & \textbf{3.80}/64 & \textbf{2.95}/64 \\
+ & \multirow{2}{*}{\AuxI} & exact & 1/104 & 2/168 & 4/168 & 8/168 & 16/72 & 32/72 \\
+ & & Euler & \textbf{0.36}/64 & \textbf{0.34}/64 & \textbf{0.33}/64 & \textbf{0.34}/64 & \textbf{0.34}/64 & \textbf{0.34}/64 \\
+\midrule
+\multirow{4}{*}{normalised} & \multirow{2}{*}{\AuxN} & exact & 1/72 & 2/72 & 4/72 & 8/72 & 16/72 & 32/72 \\
+ & & Euler & 1/2 & 2/3 & 4/5 & 8/9 & 16/18 & 32/36 \\
+ & \multirow{2}{*}{\AuxI} & exact & 1/72 & 2/72 & 4/72 & 8/72 & 16/72 & 32/72 \\
+ & & Euler & 1/3 & 2/5.75 & 4/10.75 & 8/21 & 16/42.25 & \textbf{23.86}/64 \\
+\bottomrule
+\end{tabular}}
+\end{table}

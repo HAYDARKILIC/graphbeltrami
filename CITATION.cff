@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this artefact, please cite it as below."
+title: "graphbeltrami: reproduction artefact for 'Graph Neural Diffusion as a Learned Spectral Filter: Closed-Form Propagation and the Cost of Discretisation'"
+type: software
+authors:
+  - family-names: Kilic
+    given-names: Haydar
+    orcid: "https://orcid.org/0000-0002-2551-3772"
+    affiliation: "Department of Artificial Intelligence Engineering, Ostim Technical University"
+version: "1.0.0"
+date-released: "2026-11-08"
+license: MIT
+repository-code: "https://github.com/HAYDARKILIC/graphbeltrami"
+keywords:
+  - graph filtering
+  - graph neural diffusion
+  - spectral graph filter
+  - Chebyshev approximation
+preferred-citation:
+  type: unpublished
+  title: "Graph Neural Diffusion as a Learned Spectral Filter: Closed-Form Propagation and the Cost of Discretisation"
+  authors:
+    - family-names: Kilic
+      given-names: Haydar
+      orcid: "https://orcid.org/0000-0002-2551-3772"
+  year: 2026
+  notes: "Manuscript under review."

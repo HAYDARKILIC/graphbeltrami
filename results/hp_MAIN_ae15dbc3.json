@@ -1,0 +1,302 @@
+{
+  "Cora|learned_node_gauge": {
+    "T": 4.0,
+    "skip_mode": "none",
+    "lr": 0.01
+  },
+  "Cora|learned_edge_gauge": {
+    "T": 4.0,
+    "skip_mode": "none",
+    "lr": 0.01
+  },
+  "Cora|lorentzian": {
+    "T": 4.0,
+    "skip_mode": "none",
+    "lr": 0.005
+  },
+  "Cora|gprgnn": {
+    "hidden": 64,
+    "dropout": 0.3,
+    "lr": 0.005
+  },
+  "Chameleon-f|learned_node_gauge": {
+    "T": 4.0,
+    "skip_mode": "none",
+    "lr": 0.005
+  },
+  "Chameleon-f|learned_edge_gauge": {
+    "T": 4.0,
+    "skip_mode": "none",
+    "lr": 0.005
+  },
+  "Chameleon-f|lorentzian": {
+    "T": 4.0,
+    "skip_mode": "none",
+    "lr": 0.01
+  },
+  "Chameleon-f|gprgnn": {
+    "hidden": 64,
+    "dropout": 0.7,
+    "lr": 0.005
+  },
+  "Squirrel-f|learned_node_gauge": {
+    "T": 2.0,
+    "skip_mode": "gate",
+    "lr": 0.01
+  },
+  "Squirrel-f|learned_edge_gauge": {
+    "T": 2.0,
+    "skip_mode": "none",
+    "lr": 0.005
+  },
+  "Squirrel-f|lorentzian": {
+    "T": 2.0,
+    "skip_mode": "gate",
+    "lr": 0.005
+  },
+  "Squirrel-f|gprgnn": {
+    "hidden": 64,
+    "dropout": 0.7,
+    "lr": 0.01
+  },
+  "Roman-empire|learned_node_gauge": {
+    "T": 2.0,
+    "skip_mode": "gate",
+    "lr": 0.01
+  },
+  "Roman-empire|learned_edge_gauge": {
+    "T": 2.0,
+    "skip_mode": "gate",
+    "lr": 0.01
+  },
+  "Roman-empire|lorentzian": {
+    "T": 4.0,
+    "skip_mode": "none",
+    "lr": 0.01
+  },
+  "Roman-empire|gprgnn": {
+    "hidden": 64,
+    "dropout": 0.3,
+    "lr": 0.01
+  },
+  "Amazon-ratings|learned_node_gauge": {
+    "T": 4.0,
+    "skip_mode": "none",
+    "lr": 0.01
+  },
+  "Amazon-ratings|learned_edge_gauge": {
+    "T": 4.0,
+    "skip_mode": "none",
+    "lr": 0.01
+  },
+  "Amazon-ratings|lorentzian": {
+    "T": 4.0,
+    "skip_mode": "none",
+    "lr": 0.01
+  },
+  "Amazon-ratings|gprgnn": {
+    "hidden": 64,
+    "dropout": 0.3,
+    "lr": 0.01
+  },
+  "Minesweeper|learned_node_gauge": {
+    "T": 2.0,
+    "skip_mode": "gate",
+    "lr": 0.01
+  },
+  "Minesweeper|learned_edge_gauge": {
+    "T": 2.0,
+    "skip_mode": "gate",
+    "lr": 0.01
+  },
+  "Minesweeper|lorentzian": {
+    "T": 2.0,
+    "skip_mode": "gate",
+    "lr": 0.01
+  },
+  "Minesweeper|gprgnn": {
+    "hidden": 64,
+    "dropout": 0.5,
+    "lr": 0.01
+  },
+  "Chameleon-f|mlp": {
+    "hidden": 64,
+    "dropout": 0.7,
+    "lr": 0.005
+  },
+  "Chameleon-f|gcn": {
+    "hidden": 64,
+    "dropout": 0.5,
+    "lr": 0.01
+  },
+  "Chameleon-f|fagcn": {
+    "hidden": 64,
+    "dropout": 0.5,
+    "lr": 0.005
+  },
+  "Chameleon-f|grand": {
+    "T": 4.0,
+    "step": 0.25,
+    "lr": 0.01
+  },
+  "Chameleon-f|graff": {
+    "T": 2.0,
+    "step": 0.5,
+    "lr": 0.005
+  },
+  "Chameleon-f|blend_induced": {
+    "T": 2.0,
+    "skip_mode": "none",
+    "lr": 0.005
+  },
+  "Squirrel-f|mlp": {
+    "hidden": 64,
+    "dropout": 0.7,
+    "lr": 0.005
+  },
+  "Squirrel-f|gcn": {
+    "hidden": 64,
+    "dropout": 0.7,
+    "lr": 0.01
+  },
+  "Squirrel-f|fagcn": {
+    "hidden": 64,
+    "dropout": 0.7,
+    "lr": 0.005
+  },
+  "Squirrel-f|grand": {
+    "T": 4.0,
+    "step": 0.25,
+    "lr": 0.01
+  },
+  "Squirrel-f|graff": {
+    "T": 2.0,
+    "step": 0.5,
+    "lr": 0.01
+  },
+  "Squirrel-f|blend_induced": {
+    "T": 2.0,
+    "skip_mode": "none",
+    "lr": 0.005
+  },
+  "Cora|mlp": {
+    "hidden": 64,
+    "dropout": 0.7,
+    "lr": 0.005
+  },
+  "Cora|gcn": {
+    "hidden": 64,
+    "dropout": 0.5,
+    "lr": 0.01
+  },
+  "Cora|fagcn": {
+    "hidden": 64,
+    "dropout": 0.3,
+    "lr": 0.01
+  },
+  "Cora|grand": {
+    "T": 4.0,
+    "step": 0.25,
+    "lr": 0.01
+  },
+  "Cora|graff": {
+    "T": 4.0,
+    "step": 0.25,
+    "lr": 0.01
+  },
+  "Cora|blend_induced": {
+    "T": 4.0,
+    "skip_mode": "none",
+    "lr": 0.01
+  },
+  "Minesweeper|mlp": {
+    "hidden": 64,
+    "dropout": 0.5,
+    "lr": 0.01
+  },
+  "Minesweeper|gcn": {
+    "hidden": 64,
+    "dropout": 0.5,
+    "lr": 0.01
+  },
+  "Minesweeper|fagcn": {
+    "hidden": 64,
+    "dropout": 0.3,
+    "lr": 0.01
+  },
+  "Minesweeper|grand": {
+    "T": 2.0,
+    "step": 0.5,
+    "lr": 0.005
+  },
+  "Minesweeper|graff": {
+    "T": 4.0,
+    "step": 0.25,
+    "lr": 0.01
+  },
+  "Minesweeper|blend_induced": {
+    "T": 2.0,
+    "skip_mode": "gate",
+    "lr": 0.01
+  },
+  "Roman-empire|mlp": {
+    "hidden": 64,
+    "dropout": 0.3,
+    "lr": 0.01
+  },
+  "Roman-empire|gcn": {
+    "hidden": 64,
+    "dropout": 0.3,
+    "lr": 0.01
+  },
+  "Roman-empire|fagcn": {
+    "hidden": 64,
+    "dropout": 0.3,
+    "lr": 0.01
+  },
+  "Roman-empire|grand": {
+    "T": 2.0,
+    "step": 0.25,
+    "lr": 0.01
+  },
+  "Roman-empire|graff": {
+    "T": 2.0,
+    "step": 0.25,
+    "lr": 0.01
+  },
+  "Roman-empire|blend_induced": {
+    "T": 2.0,
+    "skip_mode": "gate",
+    "lr": 0.01
+  },
+  "Amazon-ratings|mlp": {
+    "hidden": 64,
+    "dropout": 0.3,
+    "lr": 0.01
+  },
+  "Amazon-ratings|gcn": {
+    "hidden": 64,
+    "dropout": 0.3,
+    "lr": 0.01
+  },
+  "Amazon-ratings|fagcn": {
+    "hidden": 64,
+    "dropout": 0.3,
+    "lr": 0.01
+  },
+  "Amazon-ratings|grand": {
+    "T": 4.0,
+    "step": 0.25,
+    "lr": 0.01
+  },
+  "Amazon-ratings|graff": {
+    "T": 2.0,
+    "step": 0.25,
+    "lr": 0.01
+  },
+  "Amazon-ratings|blend_induced": {
+    "T": 2.0,
+    "skip_mode": "none",
+    "lr": 0.01
+  }
+}
